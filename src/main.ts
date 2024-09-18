@@ -184,6 +184,8 @@ async function createReviewComment(
 }
 
 async function main() {
+  console.log("apikey,model,url",OPENAI_API_KEY, OPENAI_API_MODEL, OPENAI_API_URL)
+
   const prDetails = await getPRDetails();
   let diff: string | null;
   const eventData = JSON.parse(
