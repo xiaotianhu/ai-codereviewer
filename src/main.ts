@@ -89,6 +89,7 @@ function createPrompt(file: File, chunk: Chunk, prDetails: PRDetails): string {
 - Use the given description only for the overall context and only comment the code.
 - IMPORTANT: NEVER suggest adding comments to the code.
 - Ignore the comment lines.
+- DO NOT give descriptive suggestions,including variables,class names,function names, etc.
 
 Review the following code diff in the file "${
     file.to
